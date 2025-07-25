@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="input.css">
     <style type="text/tailwindcss">
         @theme {
@@ -17,19 +18,20 @@
 <body>
     <div class="main ">
         <nav>
-            <div class="navbar px-[1vw] w-[80vw] m-auto items-center flex justify-between">
+            <div class="navbar md:px-[1vw] px-[5vw] pt-[5vw] md:pt-[3vw] md:w-[80vw] m-auto items-center flex justify-between">
                 <div class="logo">
-                    <img src="assets/logo.png" alt="logo">
+                    <img src="assets/logo.png" class="h-[70px] w-[70px]" alt="logo">
                 </div>
-                <div class="links">
-                    <ul class="flex gap-[4vw]">
-                        <li>Home</li>
-                        <li>Shop</li>
-                        <li>About Us</li>
-                        <li>
-                            Cart
-                        </li>
+                <div class="links flex gap-[2vw] items-center justify-center">
+                    <ul class="flex md:text-[1vw] text-[5vw] gap-[4vw]">
+                        <li class="hidden md:block">Home</li>
+                        <li class="hidden md:block">Shop</li>
+                        <li class="hidden md:block">About Us</li>
                     </ul>
+                    <div class="flex md:text-[1vw] text-[5vw] items-center justify-center gap-[1.5vw] md:gap-[.5vw] ">
+                        <i class="fa fa-shopping-cart" style="font-size:28px"></i>
+                        Cart(10+)
+                    </div>
                 </div>
             </div>
         </nav>
@@ -50,18 +52,18 @@
                     <img src="assets/hero-flower.png" alt="hero">
                 </div>
             </div>
-            <div class="plants mt-[5vw]">
-                <div class="text-center">
+            <div class="plants mt-[20vw] md:mt-[5vw]">
+                <div class="text-center w-[90%] md:w-[60%] m-auto">
 
-                    <h1 class="text-center text-[4vw]"> <span class="text-main">Our</span> Plants</h1>
-                    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                    <h1 class="text-center text-[10vw] md:text-[4vw]"> <span class="text-main">Our</span> Plants</h1>
+                    <p class="text-[4vw] md:text-[1.3vw] md:mt-[0px] mt-[2vw]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                         exotic blooms, we offer a wide variety of fresh.</p>
                 </div>
                 <div class="wrap">
 
-                    <div class="cards1 flex  gap-[4vw] justify-center m-auto w-[75%] p-10">
-                        <div class="card w-[25%] flex flex-col justify-center items-center">
-                            <img class="w-[100%] h-[300px]" src="assets/sample-flower-image.png" alt="">
+                    <div class="cards1 flex flex-wrap gap-[5.8vw]  md:gap-[4vw] justify-center m-auto md:w-[75%] p-10">
+                        <div class="card  w-[45%] md:w-[25%] flex flex-col justify-center items-center">
+                            <img class="w-[100%] h-[175px] md:h-[300px]" src="assets/sample-flower-image.png" alt="">
                             <div class="text-[22px] flex flex-col items-center mt-[1vw]">
                                 <span>Lily Blossom</span>
                                 <span class="font-bold">90 USD</span>
@@ -71,8 +73,8 @@
                                     Cart</button>
                             </div>
                         </div>
-                        <div class="card w-[25%] flex flex-col justify-center items-center">
-                            <img class="w-[100%] h-[300px]" src="assets/sample-flower-image.png" alt="">
+                        <div class="card w-[45%]  md:w-[25%] flex flex-col justify-center items-center">
+                            <img class="w-[100%] h-[175px] md:h-[300px]" src="assets/sample-flower-image.png" alt="">
                             <div class="text-[22px] flex flex-col items-center mt-[1vw]">
                                 <span>Lily Blossom</span>
                                 <span class="font-bold">90 USD</span>
@@ -82,8 +84,8 @@
                                     Cart</button>
                             </div>
                         </div>
-                        <div class="card w-[25%] flex flex-col justify-center items-center">
-                            <img class="w-[100%] h-[300px]" src="assets/sample-flower-image.png" alt="">
+                        <div class="card w-[45%]  md:w-[25%] flex flex-col justify-center items-center">
+                            <img class="w-[100%] h-[175px] md:h-[300px]" src="assets/sample-flower-image.png" alt="">
                             <div class="text-[22px] flex flex-col items-center mt-[1vw]">
                                 <span>Lily Blossom</span>
                                 <span class="font-bold">90 USD</span>
@@ -93,54 +95,8 @@
                                     Cart</button>
                             </div>
                         </div>
-                        <div class="card w-[25%] flex flex-col justify-center items-center">
-                            <img class="w-[100%] h-[300px]" src="assets/sample-flower-image.png" alt="">
-                            <div class="text-[22px] flex flex-col items-center mt-[1vw]">
-                                <span>Lily Blossom</span>
-                                <span class="font-bold">90 USD</span>
-                            </div>
-                            <div class="btn w-[100%]">
-                                <button class="bg-[#E95A08] text-white px-[1.5vw] py-[0.6vw] mt-[1vw] w-[100%]">Add To
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards1 flex  gap-[4vw] justify-center m-auto w-[75%] p-10">
-                        <div class="card w-[25%] flex flex-col justify-center items-center">
-                            <img class="w-[100%] h-[300px]" src="assets/sample-flower-image.png" alt="">
-                            <div class="text-[22px] flex flex-col items-center mt-[1vw]">
-                                <span>Lily Blossom</span>
-                                <span class="font-bold">90 USD</span>
-                            </div>
-                            <div class="btn w-[100%]">
-                                <button class="bg-[#E95A08] text-white px-[1.5vw] py-[0.6vw] mt-[1vw] w-[100%]">Add To
-                                    Cart</button>
-                            </div>
-                        </div>
-                        <div class="card w-[25%] flex flex-col justify-center items-center">
-                            <img class="w-[100%] h-[300px]" src="assets/sample-flower-image.png" alt="">
-                            <div class="text-[22px] flex flex-col items-center mt-[1vw]">
-                                <span>Lily Blossom</span>
-                                <span class="font-bold">90 USD</span>
-                            </div>
-                            <div class="btn w-[100%]">
-                                <button class="bg-[#E95A08] text-white px-[1.5vw] py-[0.6vw] mt-[1vw] w-[100%]">Add To
-                                    Cart</button>
-                            </div>
-                        </div>
-                        <div class="card w-[25%] flex flex-col justify-center items-center">
-                            <img class="w-[100%] h-[300px]" src="assets/sample-flower-image.png" alt="">
-                            <div class="text-[22px] flex flex-col items-center mt-[1vw]">
-                                <span>Lily Blossom</span>
-                                <span class="font-bold">90 USD</span>
-                            </div>
-                            <div class="btn w-[100%]">
-                                <button class="bg-[#E95A08] text-white px-[1.5vw] py-[0.6vw] mt-[1vw] w-[100%]">Add To
-                                    Cart</button>
-                            </div>
-                        </div>
-                        <div class="card w-[25%] flex flex-col justify-center items-center">
-                            <img class="w-[100%] h-[300px]" src="assets/sample-flower-image.png" alt="">
+                        <div class="card  w-[45%]  md:w-[25%] flex flex-col justify-center items-center">
+                            <img class="w-[100%] h-[175px] md:h-[300px]" src="assets/sample-flower-image.png" alt="">
                             <div class="text-[22px] flex flex-col items-center mt-[1vw]">
                                 <span>Lily Blossom</span>
                                 <span class="font-bold">90 USD</span>
@@ -151,21 +107,68 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cards1 flex flex-wrap gap-[5.8vw]  md:gap-[4vw] justify-center m-auto md:w-[75%] p-10">
+                        <div class="card  w-[45%] md:w-[25%] flex flex-col justify-center items-center">
+                            <img class="w-[100%] h-[175px] md:h-[300px]" src="assets/sample-flower-image.png" alt="">
+                            <div class="text-[22px] flex flex-col items-center mt-[1vw]">
+                                <span>Lily Blossom</span>
+                                <span class="font-bold">90 USD</span>
+                            </div>
+                            <div class="btn w-[100%]">
+                                <button class="bg-[#E95A08] text-white px-[1.5vw] py-[0.6vw] mt-[1vw] w-[100%]">Add To
+                                    Cart</button>
+                            </div>
+                        </div>
+                        <div class="card w-[45%]  md:w-[25%] flex flex-col justify-center items-center">
+                            <img class="w-[100%] h-[175px] md:h-[300px]" src="assets/sample-flower-image.png" alt="">
+                            <div class="text-[22px] flex flex-col items-center mt-[1vw]">
+                                <span>Lily Blossom</span>
+                                <span class="font-bold">90 USD</span>
+                            </div>
+                            <div class="btn w-[100%]">
+                                <button class="bg-[#E95A08] text-white px-[1.5vw] py-[0.6vw] mt-[1vw] w-[100%]">Add To
+                                    Cart</button>
+                            </div>
+                        </div>
+                        <div class="card w-[45%]  md:w-[25%] flex flex-col justify-center items-center">
+                            <img class="w-[100%] h-[175px] md:h-[300px]" src="assets/sample-flower-image.png" alt="">
+                            <div class="text-[22px] flex flex-col items-center mt-[1vw]">
+                                <span>Lily Blossom</span>
+                                <span class="font-bold">90 USD</span>
+                            </div>
+                            <div class="btn w-[100%]">
+                                <button class="bg-[#E95A08] text-white px-[1.5vw] py-[0.6vw] mt-[1vw] w-[100%]">Add To
+                                    Cart</button>
+                            </div>
+                        </div>
+                        <div class="card  w-[45%]  md:w-[25%] flex flex-col justify-center items-center">
+                            <img class="w-[100%] h-[175px] md:h-[300px]" src="assets/sample-flower-image.png" alt="">
+                            <div class="text-[22px] flex flex-col items-center mt-[1vw]">
+                                <span>Lily Blossom</span>
+                                <span class="font-bold">90 USD</span>
+                            </div>
+                            <div class="btn w-[100%]">
+                                <button class="bg-[#E95A08] text-white px-[1.5vw] py-[0.6vw] mt-[1vw] w-[100%]">Add To
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                  
                 </div>
             </div>
-            <div class="seller mt-[10vw] mb-[5vw] flex w-[75%] gap-[5vw] items-center justify-center m-auto">
-                <div class="wrap relative w-[60%]">
+            <div class="seller mt-[10vw] mb-[25vw] md:mb-[5vw] flex md:px-0 px-[8vw] md:w-[75%] gap-[5vw] flex-col md:flex-row items-center justify-center m-auto">
+                <div class="wrap relative md:w-[60%] w-[100%]">
                     
-                    <div class="image relative flex justify-center items-center h-[90%] w-[90%] ">
-                        <img src="assets/flower-store.png" class="relative" alt="flower store">
+                    <div class="image relative flex justify-center items-center h-[50vh] md:h-[90%] md:w-[90%] ">
+                        <img src="assets/flower-store.png" class="relative object-cover h-full w-full" alt="flower store">
                     </div>
-                    <span class="star ">
-                        <img src="assets/trusted-badge.png" class="h-[40%] w-[40%] absolute top-[-20%] right-[-5%] " alt="star">
+                    <span class="star hidden md:block ">
+                        <img src="assets/trusted-badge.png" class="h-[40%] w-[40%] absolute top-[-20%] right-[-5%]  " alt="star">
                     </span>
                 </div>
-                <div class="texts w-[50%]">
-                    <h1 class="text-[50px] font-bold">Flower & Plants Lover</h1>
-                    <ul class="list-disc pl-6 text-[22px] mt-[1.5vw]">
+                <div class="texts md:w-[50%]">
+                    <h1 class="md:text-[50px] text-[8vw] font-bold">Flower & Plants Lover</h1>
+                    <ul class="list-disc pl-6 text-[4.5vw] md:text-[22px] mt-[1.5vw]">
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
                         <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -174,56 +177,58 @@
 
                 </div>
             </div>
-            <div class="deals m-auto flex justify-between items-center flex-col mb-[10vw]">
-                <div class="heading mb-[3vw] flex justify-between items-center flex-col">
-                    <h1 class="text-[50px] font-bold "> <span>Latest</span> Deals</h1>
-                    <p class="text-[20px] ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-                </div>
-                <div class="wrap gap-[4vw] h-[70vh] w-[75%] m-auto flex justify-between items-center">
+            <div class="deals m-auto flex justify-between items-center flex-col mb-[20vw] md:mb-[10vw]">
+               <div class="text-center w-[90%] md:w-[60%] mb-[20vw] m-auto">
 
-                    <div class="left gap-[4vw] flex flex-col h-full w-[35%]">
+                    <h1 class="text-center text-[10vw] md:text-[4vw]"> <span class="text-main">Latest</span> Deals</h1>
+                    <p class="text-[4vw] md:text-[1.3vw] md:mt-[0px] mt-[2vw]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                        exotic blooms, we offer a wide variety of fresh.</p>
+                </div>
+                <div class="wrap gap-[10vw] md:gap-[4vw] h-[70vh] flex-col md:flex-row md:w-[75%] m-auto flex justify-between items-center">
+
+                    <div class="left gap-[4vw] flex flex-col h-full md:w-[35%]">
                         <div class="top relative h-[50%] ">
                             <img src="assets/deal-ana.png" class="object-cover flower  h-full w-full" alt="">
                             <div class="textsdrop text-white font-bold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center w-full">
-                                <h2 class="text-[1.3em]">60% Off | Bloom Plant</h2>
-                                <a  class="mt-[1.5vw] text-[1.1em] font-semibold  " href="/">Shop Now</a>
+                                <h2 class=" text-[1.7em] md:text-[1.3em]">60% Off | Bloom Plant</h2>
+                                <a  class="mt-[1.5vw] text-[1.4em] underline md:text-[1.1em] font-semibold  " href="/">Shop Now</a>
                             </div>
                         </div>
                         <div class="bottom relative  h-[50%] ">
                             <img src="assets/deal-bloom.png" class="object-cover flower  h-full w-full" alt="">
                             <div class="textsdrop text-white font-bold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center w-full">
-                                <h2 class="text-[1.3em]">30% Off | Ana  Plant</h2>
-                                <a  class="mt-[1.5vw] text-[1.1em] font-semibold  " href="/">Shop Now</a>
+                                <h2 class="text-[1.7em] md:text-[1.3em]">30% Off | Ana  Plant</h2>
+                                <a  class="mt-[1.5vw]  text-[1.4em] underline md:text-[1.1em]  font-semibold  " href="/">Shop Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="right relative h-[100%] w-[65%]">
+                    <div class="right relative h-[100%] px-[5vw] md:w-[65%]">
                         <img src="assets/deal-zabo.png" class="flower object-cover  h-full w-full" alt="">
                         <div class="textsdrop text-white font-bold absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center w-full">
-                                <h2 class="text-[2.3em]">25% Off | Zabo Plant</h2>
-                                <a  class="mt-[1.5vw] text-[2.1em] font-semibold  " href="/">Shop Now</a>
+                                <h2 class="text-[1.7em] md:text-[2.3em]">25% Off | Zabo Plant</h2>
+                                <a  class="mt-[1.5vw]  text-[1.4em] underline md:text-[2.1em]  font-semibold  " href="/">Shop Now</a>
                             </div>
                     </div>
                 </div>
             </div>
-            <div class="newsletter mb-[3vw] relative h-[70vh]">
+            <div class="newsletter mb-[20vw] md:mb-[3vw] relative h-[40vh] md:h-[70vh]">
                 <img src="assets/news-letter-bg.png" class="object-cover   h-full w-full" alt="">
                 <div class=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
-                    <h1 class="text-[3.5em] text-white font-bold mb-[1.5vw]">Join the colorful Bunch</h1>
-                    <div class="inp flex h-[7vh]">
-                        <input placeholder="Write Email" class="bg-white py-[.7vw] px-[.8vw] w-[50vw] h-full" type="text">
+                    <h1 class="text-center text-white font-bold mb-[5vw] text-[6vw] md:text-[4vw]">Join the colorful Bunch</h1>
+                    <div class="inp flex h-[5vh] md:h-[7vh]">
+                        <input placeholder="Write Email" class="bg-white md:py-[.7vw] px-[.8vw] w-[60vw] md:w-[50vw] h-full" type="text">
                         <button class="bg-[#E95A08] text-white px-[2.5vw] py-[.4vw]  border-none h-full ">Subscribe</button>
                     </div>
                 </div>
                 
             </div>
         </main>
-        <footer class="flex gap-[2vw] mb-[1.5vw] justify-between m-auto w-[80%]">
-            <div class="1st w-[30%]">
-                <img src="assets/logo.png" alt="">
-                <p class="text-[18px] mt-[1.5vw]">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+        <footer class="flex md:flex-row flex-col gap-[2vw] mb-[1.5vw] justify-between m-auto w-[80%]">
+            <div class="1st md:w-[30%]">
+                <img src="assets/logo.png" class="h-[120px] w-[180px]" alt="">
+                <p class="md:text-[18px] text-[5vw] mt-[1.5vw]">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
             </div>
-            <div class="2nd flex justify-between w-[30%]">
+            <div class="2nd flex md:flex-row flex-col text-[5vw] gap-[5vw] justify-between md:w-[30%]">
                 <ul class="flex flex-col gap-[1vw]">
                     <li>Home</li>
                     <li>About Us</li>
@@ -239,11 +244,11 @@
                     <li>Help</li>
                 </ul>
             </div>
-            <div class="3rd w-[30%] flex gap-[1vw]">
-                <img class="w-[30px] h-[30px]"  src="assets/icon-facebook.png" alt="">
-                <img class="w-[30px] h-[30px]" src="assets/icon-linkedin.png" alt="">
-                <img class="w-[30px] h-[30px]" src="assets/icon-twitter.png" alt="">
-                <img class="w-[30px] h-[30px]" src="assets/icon-youtube.png" alt="">
+            <div class="3rd md:w-[30%] flex gap-[5vw] md:gap-[1vw]">
+                <img class="md:w-[30px]  w-[30px] md:h-[30px]  h-[30px]"  src="assets/icon-facebook.png" alt="">
+                <img class="md:w-[30px]  w-[30px] md:h-[30px]  h-[30px]" src="assets/icon-linkedin.png" alt="">
+                <img class="md:w-[30px]  w-[30px] md:h-[30px]  h-[30px]" src="assets/icon-twitter.png" alt="">
+                <img class="md:w-[30px]  w-[30px] md:h-[30px]  h-[30px]" src="assets/icon-youtube.png" alt="">
             </div>
         </footer>
 
