@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.flower{
+    /* filter: drop-shadow(offset-x offset-y blur-radius black); */
+    border-radius: 30px;
+}
